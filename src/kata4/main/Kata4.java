@@ -18,21 +18,21 @@ public class Kata4 {
         execute();
     }
     
-    public static void execute() {
+    private static void execute() {
         input();
         process();
         output();
     }
     
-    public static void input() {
+    private static void input() {
         mailList = MailListReader.read(fileName); 
     }
     
-    public static void process() {
+    private static void process() {
         mailHistogram = MailHistogramBuilder.build(mailList);
     }
    
-    public static void output() {
+    private static void output() {
         new HistogramDisplay(mailHistogram).execute();
     }
     
